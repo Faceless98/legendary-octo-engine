@@ -1,0 +1,35 @@
+.container {  display: grid;
+    grid-template-columns: 0.3fr 1.7fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 0.6fr 2.1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "logo head head head head head head head head"
+        "bann bann bann bann bann bann bann bann bann"
+        "side side cont cont cont cont cont cont cont"
+        "side side cont cont cont cont cont cont cont"
+        "side side cont cont cont cont cont cont cont"
+        "side side cont cont cont cont cont cont cont"
+        "side side cont cont cont cont cont cont cont"
+        "side side cont cont cont cont cont cont cont"
+        "foot foot foot foot foot foot foot foot foot";
+}
+
+.foot { grid-area: foot; }
+
+.cont {
+     grid-area: cont; 
+}
+
+.bann { 
+    grid-area: bann; 
+}
+
+.logo { grid-area: logo; }
+
+.head { 
+    grid-area: head; 
+    background-color: #fbd504;
+}
+
+.side { grid-area: side; }
